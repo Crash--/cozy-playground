@@ -1,0 +1,53 @@
+{
+  "name": "Cozy Playground",
+  "name_prefix": "Cozy",
+  "slug": "playground",
+  "icon": "icon.svg",
+  "categories": ["cozy"],
+  "version": "0.0.1",
+  "licence": "AGPL-3.0",
+  "editor": "Cozy",
+  "source": "https://github.com/cozy/cozy-playground.git@build",
+  "developer": {
+    "name": "Cozy Cloud",
+    "url": "https://cozy.io"
+  },
+  "screenshots": [
+    "screenshots/fr/screenshot01.png",
+    "screenshots/fr/screenshot02.png"
+  ],
+  "langs": ["en", "fr"],
+  "routes": {
+    "/": {
+      "folder": "/",
+      "index": "index.html",
+      "public": false
+    },
+    "/public": {
+      "folder": "/",
+      "index": "index.html",
+      "public": true
+    }
+  },
+  "permissions": {
+    "apps": {
+      "description": "Required by the cozy-bar to display the icons of the apps",
+      "type": "io.cozy.apps",
+      "verbs": ["GET"]
+    },
+    "files": {
+      "description": "Notes as files",
+      "type": "io.cozy.files"
+    },
+    "settings": {
+      "description": "Required by the cozy-bar to display Claudy and know which applications are coming soon",
+      "type": "io.cozy.settings",
+      "verbs": ["GET"]
+    },
+    "sharings": {
+      "description": "Required to have access to the sharings in realtime",
+      "type": "io.cozy.sharings",
+      "verbs": ["GET"]
+    }	
+  }
+}
