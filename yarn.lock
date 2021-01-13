@@ -2514,6 +2514,13 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.12.1":
+  version "7.12.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.2.0":
   version "7.7.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.6.tgz#d18c511121aff1b4f2cd1d452f1bac9601dd830f"
@@ -4410,22 +4417,6 @@ babel-preset-cozy-app@1.9.2:
     browserslist-config-cozy "^0.3.1"
     lodash "4.17.19"
 
-babel-preset-cozy-app@^1.9.3:
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/babel-preset-cozy-app/-/babel-preset-cozy-app-1.9.3.tgz#3b59fdc902a3cca2527cbe3cee6d32efa38512cc"
-  integrity sha512-tc0Yxn7A8Qr9+fugNUJk6Jt8qp0j4qiiM3ouu+sJS2wSckpKf/KTzxkEvEzHsYriK20p4aDz68zCTsOXKQlJfA==
-  dependencies:
-    "@babel/core" "7.2.2"
-    "@babel/helper-plugin-utils" "7.0.0"
-    "@babel/plugin-proposal-class-properties" "7.3.0"
-    "@babel/plugin-proposal-object-rest-spread" "7.3.2"
-    "@babel/plugin-transform-runtime" "7.2.0"
-    "@babel/preset-env" "7.3.1"
-    "@babel/preset-react" "7.0.0"
-    "@babel/runtime" "7.2.0"
-    browserslist-config-cozy "^0.3.2"
-    lodash "4.17.19"
-
 babel-preset-jest@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-24.9.0.tgz#192b521e2217fb1d1f67cf73f70c336650ad3cdc"
@@ -4758,7 +4749,7 @@ browserslist-config-cozy@^0.3.0:
   resolved "https://registry.yarnpkg.com/browserslist-config-cozy/-/browserslist-config-cozy-0.3.0.tgz#8df42275b168885c6961ce4b0d253b5f415d357f"
   integrity sha512-EWCKW1Vb6OGNFgHvqnTDOI0anqVRaXmuf/uP8QB6jiH8FVrL0DAj/WuxYUFd4oVYawJZ2A5Xit86NSEWtILsSw==
 
-browserslist-config-cozy@^0.3.1, browserslist-config-cozy@^0.3.2:
+browserslist-config-cozy@^0.3.1:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/browserslist-config-cozy/-/browserslist-config-cozy-0.3.2.tgz#0a06ed1357480e4e90bbe826aa3159c7e8bc85b3"
   integrity sha512-d3wUIrKK8OYUPpgY3FJdb2I3xoDLtia7s2hhNfVUvQMldhw/xivmbtrPlkDdtsOjXa/SXKNhJT45uiS1QOhqVg==
@@ -5850,23 +5841,20 @@ cozy-logger@^1.6.0:
     chalk "^2.4.2"
     json-stringify-safe "5.0.1"
 
-cozy-procedures@^0.43.4:
-  version "0.43.4"
-  resolved "https://registry.yarnpkg.com/cozy-procedures/-/cozy-procedures-0.43.4.tgz#a994893b9b4eeafbc39b11f726e6621ac4686333"
-  integrity sha512-Z3w+5B8EwPUc+CWa0LKULSR616zOUxzS1RWjcu2h69A4kRADdbpXnQyVPcBPF8mqiEC0FInsQZjhE2SeYaMU6g==
+cozy-procedures@^0.46.0:
+  version "0.46.0"
+  resolved "https://registry.yarnpkg.com/cozy-procedures/-/cozy-procedures-0.46.0.tgz#44652c48aa879654594b7f224767d7e094163f73"
+  integrity sha512-IhG034UjenTsXkWjoTZJkCcpk/fYujAYpu+6wO2uRFnko+fGo5Vnb0u5ALE6POvE/3ROV5hE4ZoFy+Sc/IXU5w==
   dependencies:
-    "@babel/runtime" "^7.5.4"
-    babel-preset-cozy-app "^1.9.3"
-    cozy-realtime "^3.11.0"
     date-fns "^1.30.1"
-    lodash "4.17.19"
+    lodash "^4.17.19"
     prop-types "^15.7.2"
-    react-jsonschema-form "1.8.0"
-    react-redux "7.1.1"
+    react-jsonschema-form "^1.8.0"
+    react-redux "^7.1.1"
     react-router "3"
-    redux "4.0.1"
-    redux-logger "3.0.6"
-    redux-starter-kit "0.5.1"
+    redux "^4.0.1"
+    redux-logger "^3.0.6"
+    redux-starter-kit "^0.5.1"
     snarkdown "^1.2.2"
 
 cozy-realtime@3.2.1:
@@ -13916,10 +13904,10 @@ react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.11.0.tgz#b85dfecd48ad1ce469ff558a882ca8e8313928fa"
   integrity sha512-gbBVYR2p8mnriqAwWx9LbuUrShnAuSCNnuPGyc7GJrMVQtPDAh8iLpv7FRuMPFb56KkaVZIYSz1PrjI9q0QPCw==
 
-react-jsonschema-form@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/react-jsonschema-form/-/react-jsonschema-form-1.8.0.tgz#7911d5074628d5300d82c8dccdbb0d66a515713e"
-  integrity sha512-3rZZ1tCG+vtXRXEdX751t5L1c1TUGk1pvSY/4LzBrUo5FlwulnwJpkosE4BqwSRxvfMckP8YoHFQV4KjzaHGgQ==
+react-jsonschema-form@^1.8.0:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/react-jsonschema-form/-/react-jsonschema-form-1.8.1.tgz#9c962f29a55b3fe071d8edf2fc3430f05f1b7ed9"
+  integrity sha512-aaDloxNAcGXOOOcdKOxxqEEn5oDlPUZgWcs8unXXB9vjBRgCF8rCm/wVSv1u2G5ih0j/BX6Ewd/WjI2g00lPdg==
   dependencies:
     "@babel/runtime-corejs2" "^7.4.5"
     ajv "^6.7.0"
@@ -14025,17 +14013,16 @@ react-redux@5.1.1, react-redux@^5.0.0:
     react-is "^16.6.0"
     react-lifecycles-compat "^3.0.0"
 
-react-redux@7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.1.1.tgz#ce6eee1b734a7a76e0788b3309bf78ff6b34fa0a"
-  integrity sha512-QsW0vcmVVdNQzEkrgzh2W3Ksvr8cqpAv5FhEk7tNEft+5pp7rXxAudTz3VOPawRkLIepItpkEIyLcN/VVXzjTg==
+react-redux@^7.1.1:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.2.tgz#03862e803a30b6b9ef8582dadcc810947f74b736"
+  integrity sha512-8+CQ1EvIVFkYL/vu6Olo7JFLWop1qRUeb46sGtIMDCSpgwPQq8fPLpirIB0iTqFe9XYEFPHssdX8/UwN6pAkEA==
   dependencies:
-    "@babel/runtime" "^7.5.5"
-    hoist-non-react-statics "^3.3.0"
-    invariant "^2.2.4"
+    "@babel/runtime" "^7.12.1"
+    hoist-non-react-statics "^3.3.2"
     loose-envify "^1.4.0"
     prop-types "^15.7.2"
-    react-is "^16.9.0"
+    react-is "^16.13.1"
 
 react-redux@^7.2.0:
   version "7.2.0"
@@ -14405,7 +14392,7 @@ redux-immutable-state-invariant@^2.1.0:
     invariant "^2.1.0"
     json-stringify-safe "^5.0.1"
 
-redux-logger@3.0.6:
+redux-logger@^3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-3.0.6.tgz#f7555966f3098f3c88604c449cf0baf5778274bf"
   integrity sha1-91VZZvMJjzyIYExEnPC69XeCdL8=
@@ -14424,7 +14411,7 @@ redux-persist@5.10.0:
   resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-5.10.0.tgz#5d8d802c5571e55924efc1c3a9b23575283be62b"
   integrity sha512-sSJAzNq7zka3qVHKce1hbvqf0Vf5DuTVm7dr4GtsqQVOexnrvbV47RWFiPxQ8fscnyiuWyD2O92DOxPl0tGCRg==
 
-redux-starter-kit@0.5.1:
+redux-starter-kit@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/redux-starter-kit/-/redux-starter-kit-0.5.1.tgz#8b11ef234624a20c9cd384892033f7772331e9e3"
   integrity sha512-CWnjwPGdPhzqDnYYTNG5I0VjK8x3f21Nuf5xpPlOrHOhstagwxvwCZFoydOQ8TIV78ah1/WeoIQdlbks49KyIQ==
@@ -14451,15 +14438,7 @@ redux@3.7.2, redux@^3.7.2:
     loose-envify "^1.1.0"
     symbol-observable "^1.0.3"
 
-redux@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.1.tgz#436cae6cc40fbe4727689d7c8fae44808f1bfef5"
-  integrity sha512-R7bAtSkk7nY6O/OYMVR9RiBI+XghjF9rlbl5806HJbQph0LJVHZrU5oaO4q70eUKiqMRqm4y07KLTlMZ2BlVmg==
-  dependencies:
-    loose-envify "^1.4.0"
-    symbol-observable "^1.2.0"
-
-redux@^4.0.0:
+redux@^4.0.0, redux@^4.0.1:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"
   integrity sha512-VSz1uMAH24DM6MF72vcojpYPtrTUu3ByVWfPL1nPfVRb5mZVTve5GnNCUV53QM/BZ66xfWrm0CTWoM+Xlz8V1w==
