@@ -56,6 +56,14 @@
       "verbs": [
         "GET"
       ]
+    },
+    "contacts": {
+      "description": "Required to get myself",
+      "type": "io.cozy.contacts"
+    },
+    "banks": {
+      "description": "Get banks informations",
+      "type": "io.cozy.banks.*"
     }
   },
   "locales": {}
